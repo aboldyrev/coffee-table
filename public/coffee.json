@@ -1,0 +1,233 @@
+{
+	"coffees": [
+		{
+			"name": "Эспрессо",
+			"composition": { "coffee": 25 },
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Доппио",
+			"composition": { "coffee": 50 },
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Триппло",
+			"composition": { "coffee": 75 },
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Ристретто",
+			"composition": { "coffee": 20 },
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Лунго",
+			"composition": { "coffee": 90 },
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Кремовый",
+			"composition": { "coffee": 150 },
+			"cup": "sСappuccino",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Американо",
+			"composition": {
+				"espresso": 1,
+				"water": "120 мл"
+			},
+			"cup": "cappuccino"
+		},
+		{
+			"name": "Флэт вайт",
+			"composition": {
+				"espresso": 2,
+				"milk": "120 мл"
+			},
+			"cup": "cappuccino",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Маккиато",
+			"composition": {
+				"espresso": 1,
+				"milk": "15 мл"
+			},
+			"cup": "demitas",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Кон панна",
+			"composition": {
+				"espresso": 1,
+				"cream": "15 мл"
+			},
+			"cup": "sСappuccino",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Кофе по-венски",
+			"composition": {
+				"espresso": 2,
+				"cream": "15 мл"
+			},
+			"cup": "sСappuccino",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Корретто",
+			"composition": {
+				"espresso": 1,
+				"whisky": "25 мл"
+			},
+			"cup": "demitas",
+			"icons": [ "alcohol" ]
+		},
+		{
+			"name": "Романо",
+			"composition": {
+				"espresso": 1,
+				"lemon": "10 мл"
+			},
+			"cup": "demitas"
+		},
+		{
+			"name": "Аффогато",
+			"composition": {
+				"espresso": 1,
+				"ice_cream": "50 г"
+			},
+			"cup": "sСappuccino"
+		},
+		{
+			"name": "Бонбон",
+			"composition": {
+				"espresso": 1,
+				"cond_milk": "30 мл"
+			},
+			"cup": "glass_demitas"
+		},
+		{
+			"name": "Кофе со льдом",
+			"composition": {
+				"espresso": 1,
+				"ice": "2"
+			},
+			"cup": "sСappuccino",
+			"icons": ["ice"]
+		},
+		{
+			"name": "Кофе по-кубински",
+			"composition": {
+				"espresso": 1,
+				"brown_sugar": ""
+			},
+			"cup": "demitas"
+		},
+		{
+			"name": "Эспрессо с молоком",
+			"composition": {
+				"espresso": 1,
+				"milk": "90 мл"
+			},
+			"cup": "sСappuccino"
+		},
+		{
+			"name": "Кортадо",
+			"composition": {
+				"espresso": 1,
+				"milk": "30 мл"
+			},
+			"cup": "sTumbler",
+			"icons": ["foam"]
+		},
+		{
+			"name": "Кофе с молоком",
+			"composition": {
+				"coffee": "90 мл",
+				"milk": "90 мл"
+			},
+			"cup": "sTumbler",
+			"icons": ["foam"]
+		},
+		{
+			"name": "Капучино",
+			"composition": {
+				"espresso": 2,
+				"milk": "60 мл",
+				"milk_foam": "60 мл"
+			},
+			"cup": "cappuccino",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Латте",
+			"composition": {
+				"espresso": 2,
+				"milk": "200 мл",
+				"milk_foam": ""
+			},
+			"cup": "glass_latte",
+			"icons": [ "foam" ]
+		},
+		{
+			"name": "Бреве",
+			"composition": {
+				"espresso": 2,
+				"milk": "30 мл",
+				"cream": "30 мл",
+				"milk_foam": ""
+			},
+			"cup": "glass_latte",
+			"icons": [ "foam" ]
+		}
+	],
+	"cups": {
+		"demitas": {
+			"name": "Чашка демитас",
+			"volume": 90
+		},
+		"glass_demitas": {
+			"name": "Стакан демитас",
+			"volume": 90
+		},
+		"sСappuccino": {
+			"name": "Маленькая чашка для капучино",
+			"volume": 150
+		},
+		"cappuccino": {
+			"name": "Чашка для капучино",
+			"volume": 200
+		},
+		"sTumbler": {
+			"name": "Малый тумблер",
+			"volume": 90
+		},
+		"glass_latte": {
+			"name": "Латте-стакан",
+			"volume": 250
+		}
+	},
+	"composition": {
+		"espresso": {"name": "Эспрессо"},
+		"coffee": {"name": "Кофе"},
+		"water": {"name": "Вода"},
+		"liquor": {"name": "Ликёр"},
+		"whisky": {"name": "Виски"},
+		"milk": {"name": "Молоко"},
+		"milk_foam": {"name": "Молочная пена"},
+		"cond_milk": {"name": "Сгущённое молоко"},
+		"cream": {"name": "Сливки"},
+		"ice_cream": {"name": "Мороженное"},
+		"ice": {"name": "Лёд"},
+		"lemon": {"name": "Лимон"},
+		"sugar": {"name": "Сахар"},
+		"brown_sugar": {"name": "Коричневый сахар"}
+	}
+}

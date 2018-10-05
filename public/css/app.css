@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);@import url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css);body {
+  font-size: 16px;
+  color: #e5e5e5;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.cell {
+  background-color: #6f4e37;
+  width: 134px;
+  height: 134px;
+  padding: 8px;
+  position: relative;
+}
+
+.cell_alias {
+  background-color: #376f43;
+}
+
+.cell_alias p {
+  position: relative;
+  top: 27px;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+.cell__name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  max-width: 114px;
+}
+
+.cell__cup span {
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.cell__composition {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.cell__volume {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+}
+
+.cell__icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  border-radius: 50%;
+}
+
+.cell__icon_foam {
+  top: 8px;
+  color: #efefef;
+}
+
+.cell__icon_ice {
+  top: 32px;
+  color: #0ff;
+}
+
+.cell__icon_alcohol {
+  top: 56px;
+  color: yellow;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 26px repeat(10, 150px);
+  grid-template-rows: 26px repeat(5, 150px);
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.table .cell_th_column {
+  grid-row: 1;
+  padding: 0;
+  width: auto;
+  height: auto;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: transparent;
+  color: black;
+}
+
+.table .cell_th_row {
+  grid-column: 1;
+  padding: 0;
+  width: auto;
+  height: auto;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: transparent;
+  color: black;
+}
+
+.table .cell_1 {
+  grid-row: 2;
+}
+
+.table .cell_2 {
+  grid-row: 3;
+}
+
+.table .cell_3 {
+  grid-row: 4;
+}
+
+.table .cell_4 {
+  grid-row: 5;
+}
+
+.table .cell_5 {
+  grid-row: 6;
+}
+
+.table .cell_a {
+  grid-column: 2;
+}
+
+.table .cell_b {
+  grid-column: 3;
+}
+
+.table .cell_c {
+  grid-column: 4;
+}
+
+.table .cell_d {
+  grid-column: 5;
+}
+
+.table .cell_e {
+  grid-column: 6;
+}
+
+.table .cell_f {
+  grid-column: 7;
+}
+
+.table .cell_g {
+  grid-column: 8;
+}
+
+.table .cell_h {
+  grid-column: 9;
+}
+
+.table .cell_i {
+  grid-column: 10;
+}
+
+.table .cell_j {
+  grid-column: 11;
+}
+
+.special {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 26px repeat(10, 150px);
+  grid-template-rows: 150px;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+}
+
+.special .cell {
+  background-color: #376f43;
+}
+
+.special .cell_th {
+  grid-column: 1;
+  padding: 0;
+  width: auto;
+  height: auto;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: transparent;
+  color: black;
+}
+

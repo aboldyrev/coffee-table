@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css');
+
+body {
+	font-size: 16px;
+	color: #e5e5e5;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.cell {
+	background-color: #6f4e37;
+	width: 134px;
+	height: 134px;
+	padding: 8px;
+	position: relative;
+
+	&_alias {
+		background-color: #376f43;
+
+		p {
+			position: relative;
+			top: 27px;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: center;
+			margin: auto;
+		}
+	}
+
+	&__name {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 8px;
+		max-width: 114px;
+	}
+
+	&__cup {
+		span {
+			vertical-align: bottom;
+			margin-right: 8px;
+		}
+	}
+
+	&__composition {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	&__volume {
+		position: absolute;
+		bottom: 8px;
+		right: 8px;
+		font-size: 12px;
+	}
+
+	&__icon {
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		right: 8px;
+		border-radius: 50%;
+
+		&_foam {
+			top: 8px;
+			color: #efefef;
+		}
+
+		&_ice {
+			top: 32px;
+			color: #0ff;
+		}
+
+		&_alcohol {
+			top: 56px;
+			color: yellow;
+		}
+	}
+}
+
+.table {
+	display: grid;
+	grid-template-columns: 26px repeat(10, 150px);
+	grid-template-rows: 26px repeat(5, 150px);
+	grid-row-gap: 8px;
+	grid-column-gap: 8px;
+	margin-bottom: 32px;
+
+	.cell {
+
+		&_th_column {
+			grid-row: 1;
+			padding: 0;
+			width: auto;
+			height: auto;
+			justify-self: center;
+			align-self: center;
+			background-color: transparent;
+			color: black;
+		}
+
+		&_th_row {
+			grid-column: 1;
+			padding: 0;
+			width: auto;
+			height: auto;
+			justify-self: center;
+			align-self: center;
+			background-color: transparent;
+			color: black;
+		}
+
+		@for $row from 1 through 5 {
+			&_#{$row} {
+				grid-row: (#{$row + 1});
+			}
+		}
+
+		$columns: (1:a, 2:b, 3:c, 4:d, 5:e, 6:f, 7:g, 8:h, 9:i, 10:j);
+		@each $key, $name in $columns {
+			&_#{$name} {
+				grid-column: (#{$key + 1});
+			}
+		}
+	}
+}
+
+.special {
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: 26px repeat(10, 150px);
+	grid-template-rows: 150px;
+	grid-row-gap: 8px;
+	grid-column-gap: 8px;
+
+	.cell {
+		background-color: #376f43;
+
+		&_th {
+			grid-column: 1;
+			padding: 0;
+			width: auto;
+			height: auto;
+			justify-self: center;
+			align-self: center;
+			background-color: transparent;
+			color: black;
+		}
+	}
+}
