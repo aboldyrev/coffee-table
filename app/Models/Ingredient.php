@@ -19,4 +19,16 @@ class Ingredient extends Model
 	public function icons() {
 		return $this->belongsToMany(Icon::class);
 	}
+
+
+	protected static function boot() {
+		parent::boot();
+
+		self::deleting(function(self $model) {
+
+			$model->coffees()->detach();
+			$model->icons()->detach();
+
+		});
+	}
 }

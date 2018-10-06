@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Icon extends Model
 {
-	protected $fillable = [ 'ios' ];
+	protected $fillable = [ 'id', 'ios' ];
+
+	protected $casts = [
+		'id' => 'string'
+	];
 
 
 	public function ingredients() {

@@ -8,15 +8,32 @@ class Cup extends Model
 {
 	protected $fillable = [
 		'name',
-		'volume'
+		'volume',
 	];
 
 	protected $casts = [
-		'volume' => 'integer'
+		'volume' => 'integer',
 	];
 
 
 	public function coffees() {
 		return $this->hasMany(Coffee::class);
+	}
+
+
+	protected static function boot() {
+		parent::boot();
+
+		self::deleting(function(self $model) {
+
+			$model
+				->coffees()
+				->each(function(Coffee $coffee) {
+
+					$coffee->delete();
+
+				});
+
+		});
 	}
 }

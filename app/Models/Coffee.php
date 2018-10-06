@@ -19,4 +19,15 @@ class Coffee extends Model
 			->belongsToMany(Ingredient::class)
 			->withPivot('volume');
 	}
+
+
+	protected static function boot() {
+		parent::boot();
+
+		self::deleting(function(self $model) {
+
+			$model->ingredients()->detach();
+
+		});
+	}
 }
