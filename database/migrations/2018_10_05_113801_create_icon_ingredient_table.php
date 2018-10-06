@@ -16,7 +16,7 @@ class CreateIconIngredientTable extends Migration
 	public function up() {
 		Schema::create($this->table, function(Blueprint $table) {
 			$table
-				->unsignedInteger('icon_id')
+				->string('icon_id')
 				->index();
 
 			$table
