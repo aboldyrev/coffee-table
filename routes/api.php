@@ -13,6 +13,36 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/', 'MetaController@index');
+
+/** Роуты емкостей */
+Route::resource(
+	'cups',
+	'CupController',
+	[
+		'names' => [
+			'index'   => 'api.cups.index',
+			'store'   => 'api.cups.store',
+			'create'  => 'api.cups.create',
+			'show'    => 'api.cups.show',
+			'update'  => 'api.cups.update',
+			'destroy' => 'api.cups.destroy',
+			'edit'    => 'api.cups.edit',
+		],
+	]
+);
+
+/** Роуты иконок */
+Route::resource(
+	'icons',
+	'IconController',
+	[
+		'only' => [
+			'index', 'show',
+		],
+		'names' => [
+			'index'   => 'api.icons.index',
+			'show'    => 'api.icons.show',
+		],
+	]
+);
