@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Ingredient extends Model
 {
@@ -13,14 +14,14 @@ class Ingredient extends Model
 	];
 
 
-	public function coffees() {
+	public function coffees():BelongsToMany {
 		return $this
 			->belongsToMany(Coffee::class)
 			->withPivot('volume');
 	}
 
 
-	public function icons() {
+	public function icons():BelongsToMany {
 		return $this->belongsToMany(Icon::class);
 	}
 

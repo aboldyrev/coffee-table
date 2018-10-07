@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Cup extends Model
 {
@@ -16,7 +17,7 @@ class Cup extends Model
 	];
 
 
-	public function coffees() {
+	public function coffees():HasMany {
 		return $this->hasMany(Coffee::class);
 	}
 
