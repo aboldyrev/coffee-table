@@ -72,6 +72,8 @@ class CupController extends Controller
 
 		if ($cup && $cup->exists) {
 			$cup->delete();
+
+			return NULL;
 		}
 
 		return abort(Response::HTTP_NOT_FOUND);
