@@ -21,7 +21,10 @@ class CreateCoffeesTable extends Migration
 
 			$table->string('name');
 
-			$table->unsignedInteger('cup_id')->index();
+			$table
+				->unsignedInteger('cup_id')
+				->nullable()
+				->index();
 
 			$table->timestamps();
 		});
