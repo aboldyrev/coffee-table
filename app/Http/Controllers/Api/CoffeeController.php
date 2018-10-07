@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Resources\CoffeeResource;
 use App\Models\Coffee;
 use Illuminate\Http\Request;
