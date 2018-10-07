@@ -1,0 +1,2684 @@
+{
+	"info": {
+		"_postman_id": "db1b2c2f-b507-49ef-ae8b-2d250011554a",
+		"name": "coffee-table",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Иконки",
+			"item": [
+				{
+					"name": "Список иконок",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/icons",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"icons"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/icons",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"icons"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "140",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:57:06 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\n    \"data\": [\n        {\n            \"icon\": \"alcohol\",\n            \"ios\": \"nuclear\"\n        },\n        {\n            \"icon\": \"foam\",\n            \"ios\": \"cloud\"\n        },\n        {\n            \"icon\": \"ice\",\n            \"ios\": \"cube\"\n        }\n    ],\n    \"status\": {\n        \"code\": 200,\n        \"message\": \"OK\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Отдельная иконка",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/icons/foam",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"icons",
+								"foam"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/icons/foam",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"icons",
+										"foam"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:57:46 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"icon\":\"foam\",\"ios\":\"cloud\"},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Чашки",
+			"item": [
+				{
+					"name": "Список чашек",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/cups",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"cups"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1242",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:57:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":[{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":90,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":2,\"name\":\"Стакан демитас\",\"volume\":90,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":3,\"name\":\"Малая чашка для капучино\",\"volume\":150,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":4,\"name\":\"Большая чашка для капучино\",\"volume\":250,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":5,\"name\":\"Чашка для капучино\",\"volume\":200,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":6,\"name\":\"Малый тумблер\",\"volume\":90,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":7,\"name\":\"Большой тумблер\",\"volume\":250,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":8,\"name\":\"Латте-стакан\",\"volume\":250,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},{\"id\":9,\"name\":\"Айриш-стакан\",\"volume\":250,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"}],\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Создание чашки",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\",\n\t\"volume\": 150\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/cups",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"cups"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Попытка создать модель с параметрами существующей модели",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"test\",\n\t\"volume\": 150\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "152",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:58:38 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":10,\"name\":\"test\",\"volume\":150,\"created_at\":\"2018-10-07 11:58:24\",\"updated_at\":\"2018-10-07 11:58:24\"},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						},
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"test\",\n\t\"volume\": 150\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "157",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:58:24 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"name\":\"test\",\"volume\":150,\"updated_at\":\"2018-10-07 11:58:24\",\"created_at\":\"2018-10-07 11:58:24\",\"id\":10},\"status\":{\"code\":201,\"message\":\"Created\"}}"
+						}
+					]
+				},
+				{
+					"name": "Отдельная чашка",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/cups/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"cups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:59:14 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":90,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:34:19\"},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Обновление чашки",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Чашка демитас\",\n\t\"volume\": 150\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/cups/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"cups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Чашка демитас\",\n\t\"volume\": 150\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 11:59:56 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":150,\"created_at\":\"2018-10-07 11:34:19\",\"updated_at\":\"2018-10-07 11:59:56\"},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Удаление чашки",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/cups/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"cups",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/cups/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"cups",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:00:08 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ингредиенты",
+			"item": [
+				{
+					"name": "Список ингредиентов",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/ingredients",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"ingredients"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/ingredients",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"ingredients"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:17:41 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":[{\"id\":1,\"name\":\"Ликёр\",\"harder\":true,\"created_at\":\"2018-10-07 12:17:21\",\"updated_at\":\"2018-10-07 12:17:21\",\"icons\":[{\"id\":\"alcohol\",\"ios\":\"nuclear\",\"pivot\":{\"ingredient_id\":1,\"icon_id\":\"alcohol\"}}]}],\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Создание ингредиента",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ликёр\",\n\t\"harder\": true,\n\t\"icons\": [ \"alcohol\" ]\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/ingredients",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"ingredients"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Ликёр\",\n\t\"harder\": true,\n\t\"icons\": [ \"alcohol\" ]\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/ingredients",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"ingredients"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:17:21 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"name\":\"Ликёр\",\"harder\":true,\"updated_at\":\"2018-10-07 12:17:21\",\"created_at\":\"2018-10-07 12:17:21\",\"id\":1,\"icons\":[{\"id\":\"alcohol\",\"ios\":\"nuclear\",\"pivot\":{\"ingredient_id\":1,\"icon_id\":\"alcohol\"}}]},\"status\":{\"code\":201,\"message\":\"Created\"}}"
+						}
+					]
+				},
+				{
+					"name": "Отдельный ингредиент",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/ingredients/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"ingredients",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/ingredients/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"ingredients",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "249",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:18:02 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Ликёр\",\"harder\":true,\"created_at\":\"2018-10-07 12:17:21\",\"updated_at\":\"2018-10-07 12:17:21\",\"icons\":[{\"id\":\"alcohol\",\"ios\":\"nuclear\",\"pivot\":{\"ingredient_id\":1,\"icon_id\":\"alcohol\"}}]},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Обновление ингредиента",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ликёр\",\n\t\"icons\": [ \"alcohol\" ]\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/ingredients/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"ingredients",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Ликёр\",\n\t\"icons\": [ \"alcohol\" ]\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/ingredients/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"ingredients",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "249",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:18:27 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Ликёр\",\"harder\":true,\"created_at\":\"2018-10-07 12:17:21\",\"updated_at\":\"2018-10-07 12:17:21\",\"icons\":[{\"id\":\"alcohol\",\"ios\":\"nuclear\",\"pivot\":{\"ingredient_id\":1,\"icon_id\":\"alcohol\"}}]},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Удаление ингредиента",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/ingredients/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"ingredients",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/ingredients/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"ingredients",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:19:00 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Напитки",
+			"item": [
+				{
+					"name": "Список напитков",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/coffees",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"coffees"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:02:28 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Доппио\",\n            \"cup_id\": 1,\n            \"created_at\": \"2018-10-07 12:01:28\",\n            \"updated_at\": \"2018-10-07 12:01:28\",\n            \"cup\": null,\n            \"ingredients\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"кофе\",\n                    \"harder\": true,\n                    \"created_at\": \"2018-10-07 00:00:00\",\n                    \"updated_at\": \"2018-10-07 00:00:00\",\n                    \"pivot\": {\n                        \"coffee_id\": 1,\n                        \"ingredient_id\": 1,\n                        \"volume\": 50\n                    }\n                }\n            ]\n        }\n    ],\n    \"status\": {\n        \"code\": 200,\n        \"message\": \"OK\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Создание напитка",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Доппио\",\n\t\"cup\": 1,\n\t\"ingredients\": [\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"volume\": 50\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/coffees",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"coffees"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Попытка создать модель с параметрами существующей модели",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Доппио\",\n\t\"cup\": 1,\n\t\"ingredients\": [\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"volume\": 50\n\t\t}\n\t]\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "349",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:01:40 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":4,\"name\":\"Доппио\",\"cup_id\":1,\"created_at\":\"2018-10-07 12:01:28\",\"updated_at\":\"2018-10-07 12:01:28\",\"cup\":null,\"ingredients\":[{\"id\":1,\"name\":\"кофе\",\"harder\":true,\"created_at\":\"2018-10-07 00:00:00\",\"updated_at\":\"2018-10-07 00:00:00\",\"pivot\":{\"coffee_id\":4,\"ingredient_id\":1,\"volume\":50}}]},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						},
+						{
+							"name": "СТандартный ответ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Доппио\",\n\t\"cup\": 1,\n\t\"ingredients\": [\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"volume\": 50\n\t\t}\n\t]\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "354",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:01:28 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"name\":\"Доппио\",\"updated_at\":\"2018-10-07 12:01:28\",\"created_at\":\"2018-10-07 12:01:28\",\"id\":4,\"cup_id\":1,\"cup\":null,\"ingredients\":[{\"id\":1,\"name\":\"кофе\",\"harder\":true,\"created_at\":\"2018-10-07 00:00:00\",\"updated_at\":\"2018-10-07 00:00:00\",\"pivot\":{\"coffee_id\":4,\"ingredient_id\":1,\"volume\":50}}]},\"status\":{\"code\":201,\"message\":\"Created\"}}"
+						}
+					]
+				},
+				{
+					"name": "Отдельный напиток",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/coffees/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"coffees",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:14:55 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=99",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Доппио\",\"cup_id\":1,\"created_at\":\"2018-10-07 12:14:51\",\"updated_at\":\"2018-10-07 12:14:51\",\"cup\":{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":90,\"created_at\":\"2018-10-07 12:13:17\",\"updated_at\":\"2018-10-07 12:13:17\"},\"ingredients\":[]},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Обновление напитка",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Доппио\",\n\t\"cup\": 1,\n\t\"ingredients\": [\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"volume\": 50\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/coffees/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"coffees",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Доппио\",\n\t\"cup\": 1,\n\t\"ingredients\": [\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"volume\": 50\n\t\t}\n\t]\n}"
+								},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:15:36 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"data\":{\"id\":1,\"name\":\"Доппио\",\"cup_id\":1,\"created_at\":\"2018-10-07 12:14:51\",\"updated_at\":\"2018-10-07 12:14:51\",\"cup\":{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":90,\"created_at\":\"2018-10-07 12:13:17\",\"updated_at\":\"2018-10-07 12:13:17\"},\"ingredients\":[]},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				},
+				{
+					"name": "Удаление напитка",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/coffees/1",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"coffees",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Стандартный ответ",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://coffee-table.qwer/api/coffees/1",
+									"protocol": "http",
+									"host": [
+										"coffee-table",
+										"qwer"
+									],
+									"path": [
+										"api",
+										"coffees",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Oct 2018 12:15:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100",
+									"name": "Keep-Alive",
+									"description": "Custom header"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.34 (Ubuntu)",
+									"name": "Server",
+									"description": "A name for the server"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60",
+									"name": "X-RateLimit-Limit",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58",
+									"name": "X-RateLimit-Remaining",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": false,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+									"key": "XSRF-TOKEN"
+								},
+								{
+									"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+									"httpOnly": true,
+									"domain": "coffee-table.qwer",
+									"path": "/",
+									"secure": false,
+									"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+									"key": "laravel_session"
+								}
+							],
+							"body": "{\"status\":{\"code\":200,\"message\":\"OK\"}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Точка входа",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://coffee-table.qwer/api",
+					"protocol": "http",
+					"host": [
+						"coffee-table",
+						"qwer"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Стандартный ответ",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "425",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 07 Oct 2018 12:19:25 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60",
+							"name": "X-RateLimit-Limit",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57",
+							"name": "X-RateLimit-Remaining",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+							"httpOnly": false,
+							"domain": "coffee-table.qwer",
+							"path": "/",
+							"secure": false,
+							"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+							"key": "XSRF-TOKEN"
+						},
+						{
+							"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+							"httpOnly": true,
+							"domain": "coffee-table.qwer",
+							"path": "/",
+							"secure": false,
+							"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+							"key": "laravel_session"
+						}
+					],
+					"body": "{\n    \"meta\": [\n        {\n            \"name\": \"Таблица\",\n            \"url\": \"http://coffee-table.loc/api/table\"\n        },\n        {\n            \"name\": \"Напитки\",\n            \"url\": \"http://coffee-table.loc/api/coffees\"\n        },\n        {\n            \"name\": \"Ёмкости\",\n            \"url\": \"http://coffee-table.loc/api/cups\"\n        },\n        {\n            \"name\": \"Ингредиенты\",\n            \"url\": \"http://coffee-table.loc/api/ingredients\"\n        },\n        {\n            \"name\": \"Иконки\",\n            \"url\": \"http://coffee-table.loc/api/icons\"\n        }\n    ],\n    \"status\": {\n        \"code\": 200,\n        \"message\": \"OK\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Таблица напитков",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://coffee-table.qwer/api/table",
+					"protocol": "http",
+					"host": [
+						"coffee-table",
+						"qwer"
+					],
+					"path": [
+						"api",
+						"table"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Стандартный ответ",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://coffee-table.qwer/api/table",
+							"protocol": "http",
+							"host": [
+								"coffee-table",
+								"qwer"
+							],
+							"path": [
+								"api",
+								"table"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "303",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 07 Oct 2018 12:20:27 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60",
+							"name": "X-RateLimit-Limit",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59",
+							"name": "X-RateLimit-Remaining",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+							"httpOnly": false,
+							"domain": "coffee-table.qwer",
+							"path": "/",
+							"secure": false,
+							"value": "eyJpdiI6Ikc0VFByU0FKK3RhVytsNU1HQ25TTnc9PSIsInZhbHVlIjoiVzlpU0tmYjF3OVJxcnVDaW5oUzNyc1ZOMXlvcHBYMXZvTVYybXZJYUJUUjVROWdWUUZybkpwbU03VWY4a25kUiIsIm1hYyI6IjI4NmM1MWU1NWRjMTRhMjM0OGU4ZDJjOGM1YzUxOTk4ZDkxMzM4NjdmM2Y4MmI3MjFiOTM1ZGRmYWRiNWI0YTYifQ%3D%3D",
+							"key": "XSRF-TOKEN"
+						},
+						{
+							"expires": "Sun Oct 07 2018 15:33:27 GMT+0300 (MSK)",
+							"httpOnly": true,
+							"domain": "coffee-table.qwer",
+							"path": "/",
+							"secure": false,
+							"value": "eyJpdiI6IlZvcGpHbERVbjVRbXczNlNSckRXU0E9PSIsInZhbHVlIjoidjdqa2xNaVB6RTA1S2RoUklVdVAxTVZSUFVcLzNOek1mcTdhTEJEVVhuOXhWWGdkOXcxTWY3M1B5NjlqXC9DY3hrIiwibWFjIjoiM2RlYmUzNGE2NTM4NjlmZTM2OWVmZmRhNTc4ZDQ4OWFkYjY3ZTZmNmUwNjMwY2Q0MWJlNDQ4NzMxMmI0ODQ4YiJ9",
+							"key": "laravel_session"
+						}
+					],
+					"body": "{\"0\":{\"id\":1,\"name\":\"Доппио\",\"cup_id\":1,\"created_at\":\"2018-10-07 12:16:20\",\"updated_at\":\"2018-10-07 12:16:20\",\"ingredients\":[],\"cup\":{\"id\":1,\"name\":\"Чашка демитас\",\"volume\":90,\"created_at\":\"2018-10-07 12:16:17\",\"updated_at\":\"2018-10-07 12:16:17\"}},\"status\":{\"code\":200,\"message\":\"OK\"}}"
+				}
+			]
+		}
+	]
+}
