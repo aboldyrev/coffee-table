@@ -15,6 +15,23 @@ use Illuminate\Http\Response;
 
 Route::get('/', 'MetaController@index');
 
+/** Руоты ингредиентов */
+Route::resource(
+	'ingredients',
+	'IngredientController',
+	[
+		'names' => [
+			'index'   => 'api.ingredients.index',
+			'store'   => 'api.ingredients.store',
+			'create'  => 'api.ingredients.create',
+			'show'    => 'api.ingredients.show',
+			'update'  => 'api.ingredients.update',
+			'destroy' => 'api.ingredients.destroy',
+			'edit'    => 'api.ingredients.edit',
+		],
+	]
+);
+
 /** Роуты емкостей */
 Route::resource(
 	'cups',
