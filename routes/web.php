@@ -1,5 +1,8 @@
 <?php
 
+
+use Illuminate\Http\Response;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +17,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::any('/{everything?}', function(){
+	$code = Response::HTTP_BAD_REQUEST;
+
+	abort($code, Response::$statusTexts[ $code ]);
+})->where('everything', '(.*)');

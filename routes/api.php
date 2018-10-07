@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +46,10 @@ Route::resource(
 		],
 	]
 );
+
+
+Route::any('/{everything?}', function(){
+	$code = Response::HTTP_BAD_REQUEST;
+
+	abort($code, Response::$statusTexts[ $code ]);
+})->where('everything', '(.*)');
