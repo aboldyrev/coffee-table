@@ -15,6 +15,8 @@ use Illuminate\Http\Response;
 
 Route::get('/', 'MetaController@index');
 
+Route::get('table', 'TableController@index')->name('api.table');
+
 /** Руоты ингредиентов */
 Route::resource(
 	'ingredients',

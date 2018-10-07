@@ -9,6 +9,10 @@ class MetaController extends Controller
 		return [
 			'meta' => [
 				[
+					'name' => 'Таблица',
+					'url'  => route('api.table'),
+				],
+				[
 					'name' => 'Ёмкости',
 					'url'  => route('api.cups.index'),
 				],
