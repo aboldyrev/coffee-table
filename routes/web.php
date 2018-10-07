@@ -13,14 +13,12 @@ use Illuminate\Http\Response;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function() {
-	return view('welcome');
-});
-
-
 Route::any('/{everything?}', function() {
 	$code = Response::HTTP_BAD_REQUEST;
 
 	abort($code, Response::$statusTexts[ $code ]);
 })->where('everything', '(.*)');
+
+Route
+	::get('{everything?}', 'SiteController@index')
+	->where('everything', '(.*)');
