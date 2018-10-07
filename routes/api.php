@@ -37,18 +37,18 @@ Route::resource(
 	'icons',
 	'IconController',
 	[
-		'only' => [
+		'only'  => [
 			'index', 'show',
 		],
 		'names' => [
-			'index'   => 'api.icons.index',
-			'show'    => 'api.icons.show',
+			'index' => 'api.icons.index',
+			'show'  => 'api.icons.show',
 		],
 	]
 );
 
 
-Route::any('/{everything?}', function(){
+Route::any('/{everything?}', function() {
 	$code = Response::HTTP_BAD_REQUEST;
 
 	abort($code, Response::$statusTexts[ $code ]);

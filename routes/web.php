@@ -14,12 +14,12 @@ use Illuminate\Http\Response;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+	return view('welcome');
 });
 
 
-Route::any('/{everything?}', function(){
+Route::any('/{everything?}', function() {
 	$code = Response::HTTP_BAD_REQUEST;
 
 	abort($code, Response::$statusTexts[ $code ]);

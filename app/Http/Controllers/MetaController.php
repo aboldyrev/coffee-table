@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
 class MetaController extends Controller
 {
@@ -21,7 +20,7 @@ class MetaController extends Controller
 					'name' => 'Ёмкости',
 					'url'  => route('api.cups.index'),
 				],
-			]
+			],
 		];
 	}
 }
