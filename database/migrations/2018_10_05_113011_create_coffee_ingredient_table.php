@@ -25,6 +25,8 @@ class CreateCoffeeIngredientTable extends Migration
 				->unsignedInteger('ingredient_id')
 				->index();
 
+			$table->unsignedSmallInteger('volume');
+
 			$table->index([ 'coffee_id', 'ingredient_id' ]);
 
 		});
