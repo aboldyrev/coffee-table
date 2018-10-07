@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ingredient extends Model
 {
-	protected $fillable = [ 'name' ];
+	protected $fillable = [ 'name', 'harder' ];
+
+	protected $casts = [
+		'harder' => 'boolean',
+	];
 
 
 	public function coffees() {

@@ -20,6 +20,8 @@ class CreateIngredientsTable extends Migration
 
 			$table->string('name');
 
+			$table->boolean('harder');
+
 			$table->timestamps();
 		});
 	}
