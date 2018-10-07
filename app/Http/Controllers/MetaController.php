@@ -13,6 +13,10 @@ class MetaController extends Controller
 					'url'  => route('api.table'),
 				],
 				[
+					'name' => 'Напитки',
+					'url'  => route('api.coffees.index'),
+				],
+				[
 					'name' => 'Ёмкости',
 					'url'  => route('api.cups.index'),
 				],

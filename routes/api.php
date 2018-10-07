@@ -17,7 +17,24 @@ Route::get('/', 'MetaController@index');
 
 Route::get('table', 'TableController@index')->name('api.table');
 
-/** Руоты ингредиентов */
+/** Роуты напитков */
+Route::resource(
+	'coffees',
+	'CoffeeController',
+	[
+		'names' => [
+			'index'   => 'api.coffees.index',
+			'store'   => 'api.coffees.store',
+			'create'  => 'api.coffees.create',
+			'show'    => 'api.coffees.show',
+			'update'  => 'api.coffees.update',
+			'destroy' => 'api.coffees.destroy',
+			'edit'    => 'api.coffees.edit',
+		],
+	]
+);
+
+/** Роуты ингредиентов */
 Route::resource(
 	'ingredients',
 	'IngredientController',
