@@ -28,9 +28,7 @@ class CoffeeController extends Controller
 			return abort(Response::HTTP_BAD_REQUEST);
 		}
 
-		$coffee = Coffee::firstOrCreate([
-			'name' => $request->input('name')
-		]);
+		$coffee = Coffee::firstOrCreate($request->except('cup', 'ingredients'));
 		$coffee->ingredients()->detach();
 
 		$coffee
@@ -72,9 +70,7 @@ class CoffeeController extends Controller
 			return abort(Response::HTTP_NOT_FOUND);
 		}
 
-		$coffee->update([
-			'name' => $request->input('name')
-		]);
+		$coffee->update($request->except('cup', 'ingredients'));
 
 		if ($request->has('cup')) {
 			$coffee

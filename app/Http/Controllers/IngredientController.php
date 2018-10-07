@@ -21,7 +21,7 @@ class IngredientController extends Controller
 
 	public function store(Request $request) {
 		if ($request->has('name')) {
-			$ingredient = Ingredient::firstOrCreate([ 'name' => $request->input('name') ]);
+			$ingredient = Ingredient::firstOrCreate($request->except([ 'icons' ]));
 
 			if ($request->has('icons')) {
 				$ingredient->icons()->sync($request->input('icons'));
@@ -56,7 +56,7 @@ class IngredientController extends Controller
 		$ingredient = Ingredient::find($id);
 
 		if ($ingredient && $ingredient->exists) {
-			$ingredient->update($request->all());
+			$ingredient->update($request->except([ 'icons' ]));
 
 			if ($request->has('icons')) {
 				$ingredient->icons()->sync($request->input('icons'));
